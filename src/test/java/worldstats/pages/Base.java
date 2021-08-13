@@ -1,14 +1,14 @@
-package WorldStats.Pages;
+package worldstats.pages;
 
-import WorldStats.Helpers.Wait;
-import WorldStats.Hooks.Setup;
+import worldstats.helpers.Wait;
+import worldstats.hooks.Setup;
 
 import org.openqa.selenium.WebDriver;
 
 
 public class Base {
-    protected WebDriver driver;
-    protected Wait wait;
+    protected final WebDriver driver;
+    protected final Wait wait;
 
     public Base() {
         this.driver = Setup.driver;

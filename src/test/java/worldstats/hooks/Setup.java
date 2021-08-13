@@ -1,6 +1,6 @@
-package WorldStats.Hooks;
+package worldstats.hooks;
 
-import WorldStats.Pages.Base;
+import worldstats.pages.Base;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +11,7 @@ public class Setup extends Base {
     public static WebDriver driver;
 
     @Before
-    public void setWebDriver() throws Exception {
+    public void setWebDriver() {
 
         String browser = System.getProperty("browser");
         if (browser == null) {

@@ -1,6 +1,6 @@
-package WorldStats.Hooks;
+package worldstats.hooks;
 
-import WorldStats.Pages.Base;
+import worldstats.pages.Base;
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 
 public class TearDown extends Base {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public TearDown() {
         this.driver = Setup.driver;
@@ -20,7 +20,6 @@ public class TearDown extends Base {
         if(scenario.isFailed()){
             saveScreenshotsForScenario(scenario);
         }
-        System.out.println("in After hook");
         this.driver.quit();
     }
 

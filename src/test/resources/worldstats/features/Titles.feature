@@ -1,3 +1,4 @@
+#noinspection SpellCheckingInspection
 Feature: Titles
 Are pages titles present and correct?
 

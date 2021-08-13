@@ -1,6 +1,6 @@
-package WorldStats.StepDefs;
+package worldstats.stepdefs;
 
-import WorldStats.Pages.Base;
+import worldstats.pages.Base;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;

@@ -1,4 +1,4 @@
-package WorldStats.Helpers;
+package worldstats.helpers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,9 +9,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class Wait {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public Wait(WebDriver driver) {
         this.driver = driver;
